@@ -1378,7 +1378,7 @@
     "inPresets": [
       "style"
     ],
-    "originalURL": "https://github.com/golangci/golangci-lint/blob/master/pkg/golinters/nolintlint/README.md",
+    "originalURL": "https://github.com/nalekseevs/itns-golangci-lint/blob/master/pkg/golinters/nolintlint/README.md",
     "internal": false,
     "canAutoFix": true,
     "isSlow": false,

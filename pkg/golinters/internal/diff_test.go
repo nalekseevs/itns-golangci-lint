@@ -8,8 +8,8 @@ import (
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 
-	"github.com/golangci/golangci-lint/pkg/logutils"
-	"github.com/golangci/golangci-lint/pkg/result"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/logutils"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/result"
 )
 
 func testDiffProducesChanges(t *testing.T, log logutils.Log, diff string, expectedChanges ...Change) {

@@ -4,8 +4,8 @@ import (
 	"github.com/sashamelentyev/interfacebloat/pkg/analyzer"
 	"golang.org/x/tools/go/analysis"
 
-	"github.com/golangci/golangci-lint/pkg/config"
-	"github.com/golangci/golangci-lint/pkg/goanalysis"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/config"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/goanalysis"
 )
 
 func New(settings *config.InterfaceBloatSettings) *goanalysis.Linter {

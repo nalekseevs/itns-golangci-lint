@@ -4,8 +4,8 @@ import (
 	"go/token"
 	"testing"
 
-	"github.com/golangci/golangci-lint/pkg/config"
-	"github.com/golangci/golangci-lint/pkg/result"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/config"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/result"
 )
 
 func newFLIssue(file string, line int) result.Issue {

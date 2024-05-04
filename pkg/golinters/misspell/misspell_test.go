@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/golangci/golangci-lint/pkg/config"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/config"
 )
 
 func Test_appendExtraWords(t *testing.T) {

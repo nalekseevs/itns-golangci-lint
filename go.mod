@@ -1,4 +1,4 @@
-module github.com/golangci/golangci-lint
+module github.com/nalekseevs/itns-golangci-lint
 
 go 1.21
 

@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"regexp"
 
-	"github.com/golangci/golangci-lint/pkg/fsutils"
-	"github.com/golangci/golangci-lint/pkg/result"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/fsutils"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/result"
 )
 
 var _ Processor = (*SkipFiles)(nil)

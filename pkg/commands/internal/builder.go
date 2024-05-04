@@ -12,7 +12,7 @@ import (
 	"time"
 	"unicode"
 
-	"github.com/golangci/golangci-lint/pkg/logutils"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/logutils"
 )
 
 // Builder runs all the required commands to build a binary.
@@ -89,7 +89,7 @@ func (b Builder) clone(ctx context.Context) error {
 	cmd := exec.CommandContext(ctx,
 		"git", "clone", "--branch", sanitizeVersion(b.cfg.Version),
 		"--single-branch", "--depth", "1", "-c advice.detachedHead=false", "-q",
-		"https://github.com/golangci/golangci-lint.git",
+		"https://github.com/nalekseevs/itns-golangci-lint.git",
 	)
 	cmd.Dir = b.root
 

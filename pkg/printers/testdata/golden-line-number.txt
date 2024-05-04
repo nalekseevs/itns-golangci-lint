@@ -1,6 +1,6 @@
 pkg/experimental/myplugin/myplugin.go:13:1: don't use `init` function
 pkg/lint/lintersdb/builder_plugin.go:59:69: hugeParam: settings is heavy (80 bytes); consider passing it by pointer
-pkg/printers/printer_test.go:6: File is not `goimports`-ed with -local github.com/golangci/golangci-lint
+pkg/printers/printer_test.go:6: File is not `goimports`-ed with -local github.com/nalekseevs/itns-golangci-lint
 pkg/config/issues.go:107:13: struct of size 144 bytes could be of size 128 bytes
 pkg/config/linters_settings.go:200:22: struct of size 3144 bytes could be of size 3096 bytes
 pkg/config/linters_settings.go:383:25: struct of size 72 bytes could be of size 64 bytes

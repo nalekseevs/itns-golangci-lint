@@ -78,7 +78,7 @@ release:
   header: |
     `golangci-lint` is a free and open-source project built by volunteers.
 
-    If you value it, consider supporting us, the [maintainers](https://github.com/golangci/golangci-lint?tab=readme-ov-file#contributors) and [linter authors](https://golangci-lint.run/product/thanks/).
+    If you value it, consider supporting us, the [maintainers](https://github.com/nalekseevs/itns-golangci-lint?tab=readme-ov-file#contributors) and [linter authors](https://golangci-lint.run/product/thanks/).
 
     We appreciate it! :heart:
 
@@ -113,21 +113,21 @@ chocolateys:
     title: Golangci-lint
     authors: golangci
     project_url: https://golangci-lint.run
-    url_template: "https://github.com/golangci/golangci-lint/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
+    url_template: "https://github.com/nalekseevs/itns-golangci-lint/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
     icon_url: "https://cdn.rawgit.com/golangci/golangci-lint/master/assets/go.png"
     copyright: 2024 GolangCI
-    license_url: https://github.com/golangci/golangci-lint/blob/master/LICENSE
+    license_url: https://github.com/nalekseevs/itns-golangci-lint/blob/master/LICENSE
     require_license_acceptance: false
-    project_source_url: https://github.com/golangci/golangci-lint
-    package_source_url: https://github.com/golangci/golangci-lint
+    project_source_url: https://github.com/nalekseevs/itns-golangci-lint
+    package_source_url: https://github.com/nalekseevs/itns-golangci-lint
     docs_url: https://golangci-lint.run
-    bug_tracker_url: https://github.com/golangci/golangci-lint/issues
+    bug_tracker_url: https://github.com/nalekseevs/itns-golangci-lint/issues
     tags: "go golang lint linter"
     summary: Fast linters Runner for Go
     description: |
       {{ .ProjectName }} installer package.
       Fast linters Runner for Go .
-    release_notes: "https://github.com/golangci/golangci-lint/releases/tag/v{{ .Version }}"
+    release_notes: "https://github.com/nalekseevs/itns-golangci-lint/releases/tag/v{{ .Version }}"
     api_key: "{{ .Env.CHOCOLATEY_API_KEY }}"
     source_repo: "https://push.chocolatey.org/"
     skip_publish: false

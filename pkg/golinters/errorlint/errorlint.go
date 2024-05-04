@@ -4,8 +4,8 @@ import (
 	"github.com/polyfloyd/go-errorlint/errorlint"
 	"golang.org/x/tools/go/analysis"
 
-	"github.com/golangci/golangci-lint/pkg/config"
-	"github.com/golangci/golangci-lint/pkg/goanalysis"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/config"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/goanalysis"
 )
 
 func New(cfg *config.ErrorLintSettings) *goanalysis.Linter {

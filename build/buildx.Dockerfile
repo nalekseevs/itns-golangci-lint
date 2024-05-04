@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1.4
 FROM golang:1.22
 
-# related to https://github.com/golangci/golangci-lint/issues/3107
+# related to https://github.com/nalekseevs/itns-golangci-lint/issues/3107
 ENV GOROOT /usr/local/go
 
 # Allow to download a more recent version of Go.

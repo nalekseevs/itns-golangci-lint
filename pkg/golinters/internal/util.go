@@ -7,7 +7,7 @@ import (
 
 	"golang.org/x/tools/go/analysis"
 
-	"github.com/golangci/golangci-lint/pkg/config"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/config"
 )
 
 func FormatCode(code string, _ *config.Config) string {

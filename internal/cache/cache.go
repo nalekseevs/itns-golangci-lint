@@ -21,8 +21,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/golangci/golangci-lint/internal/renameio"
-	"github.com/golangci/golangci-lint/internal/robustio"
+	"github.com/nalekseevs/itns-golangci-lint/internal/renameio"
+	"github.com/nalekseevs/itns-golangci-lint/internal/robustio"
 )
 
 // An ActionID is a cache action key, the hash of a complete description of a

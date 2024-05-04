@@ -7,9 +7,9 @@ import (
 
 	"golang.org/x/exp/maps"
 
-	"github.com/golangci/golangci-lint/pkg/config"
-	"github.com/golangci/golangci-lint/pkg/lint/linter"
-	"github.com/golangci/golangci-lint/pkg/lint/lintersdb"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/config"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/lint/linter"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/lint/lintersdb"
 )
 
 type authorDetails struct {

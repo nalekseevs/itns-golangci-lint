@@ -7,9 +7,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/golangci/golangci-lint/internal/cache"
-	"github.com/golangci/golangci-lint/pkg/fsutils"
-	"github.com/golangci/golangci-lint/pkg/logutils"
+	"github.com/nalekseevs/itns-golangci-lint/internal/cache"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/fsutils"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/logutils"
 )
 
 type cacheCommand struct {

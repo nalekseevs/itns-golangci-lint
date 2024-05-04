@@ -4,13 +4,13 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/golangci/golangci-lint/internal/pkgcache"
-	"github.com/golangci/golangci-lint/pkg/config"
-	"github.com/golangci/golangci-lint/pkg/exitcodes"
-	"github.com/golangci/golangci-lint/pkg/fsutils"
-	"github.com/golangci/golangci-lint/pkg/goanalysis/load"
-	"github.com/golangci/golangci-lint/pkg/lint/linter"
-	"github.com/golangci/golangci-lint/pkg/logutils"
+	"github.com/nalekseevs/itns-golangci-lint/internal/pkgcache"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/config"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/exitcodes"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/fsutils"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/goanalysis/load"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/lint/linter"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/logutils"
 )
 
 type ContextBuilder struct {
@@ -50,7 +50,7 @@ func (cl *ContextBuilder) Build(ctx context.Context, log logutils.Log, linters [
 		Packages: deduplicatedPkgs,
 
 		// At least `unused` linters works properly only on original (not deduplicated) packages,
-		// see https://github.com/golangci/golangci-lint/pull/585.
+		// see https://github.com/nalekseevs/itns-golangci-lint/pull/585.
 		OriginalPackages: pkgs,
 
 		Cfg:       cl.cfg,

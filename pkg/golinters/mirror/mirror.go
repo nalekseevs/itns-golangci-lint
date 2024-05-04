@@ -6,9 +6,9 @@ import (
 	"github.com/butuzov/mirror"
 	"golang.org/x/tools/go/analysis"
 
-	"github.com/golangci/golangci-lint/pkg/goanalysis"
-	"github.com/golangci/golangci-lint/pkg/lint/linter"
-	"github.com/golangci/golangci-lint/pkg/result"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/goanalysis"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/lint/linter"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/result"
 )
 
 func New() *goanalysis.Linter {
@@ -23,7 +23,7 @@ func New() *goanalysis.Linter {
 		// so we pass the `with-tests` flag as true to the analyzer before running it.
 		// This can be turned off by using the regular golangci-lint flags such as `--tests` or `--skip-files`
 		// or can be disabled per linter via exclude rules.
-		// (see https://github.com/golangci/golangci-lint/issues/2527#issuecomment-1023707262)
+		// (see https://github.com/nalekseevs/itns-golangci-lint/issues/2527#issuecomment-1023707262)
 		violations := mirror.Run(pass, true)
 
 		if len(violations) == 0 {

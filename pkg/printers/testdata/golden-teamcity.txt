@@ -3,7 +3,7 @@
 ##teamcity[inspectionType id='gocritic' name='gocritic' description='gocritic' category='Golangci-lint reports']
 ##teamcity[inspection typeId='gocritic' message='hugeParam: settings is heavy (80 bytes); consider passing it by pointer' file='pkg/lint/lintersdb/builder_plugin.go' line='59' SEVERITY='']
 ##teamcity[inspectionType id='goimports' name='goimports' description='goimports' category='Golangci-lint reports']
-##teamcity[inspection typeId='goimports' message='File is not `goimports`-ed with -local github.com/golangci/golangci-lint' file='pkg/printers/printer_test.go' line='6' SEVERITY='']
+##teamcity[inspection typeId='goimports' message='File is not `goimports`-ed with -local github.com/nalekseevs/itns-golangci-lint' file='pkg/printers/printer_test.go' line='6' SEVERITY='']
 ##teamcity[inspectionType id='maligned' name='maligned' description='maligned' category='Golangci-lint reports']
 ##teamcity[inspection typeId='maligned' message='struct of size 144 bytes could be of size 128 bytes' file='pkg/config/issues.go' line='107' SEVERITY='']
 ##teamcity[inspection typeId='maligned' message='struct of size 3144 bytes could be of size 3096 bytes' file='pkg/config/linters_settings.go' line='200' SEVERITY='']

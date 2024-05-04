@@ -9,10 +9,10 @@ import (
 	"os/exec"
 	"path/filepath"
 
-	"github.com/golangci/golangci-lint/pkg/config"
-	"github.com/golangci/golangci-lint/pkg/lint/linter"
-	"github.com/golangci/golangci-lint/pkg/lint/lintersdb"
-	"github.com/golangci/golangci-lint/scripts/website/types"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/config"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/lint/linter"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/lint/lintersdb"
+	"github.com/nalekseevs/itns-golangci-lint/scripts/website/types"
 )
 
 func main() {

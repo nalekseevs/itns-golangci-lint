@@ -5,9 +5,9 @@ import (
 	"path/filepath"
 	"regexp"
 
-	"github.com/golangci/golangci-lint/pkg/fsutils"
-	"github.com/golangci/golangci-lint/pkg/logutils"
-	"github.com/golangci/golangci-lint/pkg/result"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/fsutils"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/logutils"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/result"
 )
 
 var _ Processor = (*SkipDirs)(nil)
@@ -120,7 +120,7 @@ func (p *SkipDirs) shouldPassIssueDirs(issueRelDir, issueAbsDir string) bool {
 	// work dir path of directory of source file with the issue. It can lead
 	// to unexpected behavior if we're analyzing files out of current work dir.
 	// The alternative solution is to find relative to args path, but it has
-	// disadvantages (https://github.com/golangci/golangci-lint/pull/313).
+	// disadvantages (https://github.com/nalekseevs/itns-golangci-lint/pull/313).
 
 	path := fsutils.WithPathPrefix(p.pathPrefix, issueRelDir)
 	for _, pattern := range p.patterns {

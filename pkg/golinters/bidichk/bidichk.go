@@ -6,8 +6,8 @@ import (
 	"github.com/breml/bidichk/pkg/bidichk"
 	"golang.org/x/tools/go/analysis"
 
-	"github.com/golangci/golangci-lint/pkg/config"
-	"github.com/golangci/golangci-lint/pkg/goanalysis"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/config"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/goanalysis"
 )
 
 func New(cfg *config.BiDiChkSettings) *goanalysis.Linter {

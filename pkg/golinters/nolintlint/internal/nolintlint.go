@@ -9,7 +9,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/golangci/golangci-lint/pkg/result"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/result"
 )
 
 type BaseIssue struct {

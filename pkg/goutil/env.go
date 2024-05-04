@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/golangci/golangci-lint/pkg/logutils"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/logutils"
 )
 
 type EnvKey string

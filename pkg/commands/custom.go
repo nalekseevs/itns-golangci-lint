@@ -7,8 +7,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/golangci/golangci-lint/pkg/commands/internal"
-	"github.com/golangci/golangci-lint/pkg/logutils"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/commands/internal"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/logutils"
 )
 
 const envKeepTempFiles = "CUSTOM_GCL_KEEP_TEMP_FILES"

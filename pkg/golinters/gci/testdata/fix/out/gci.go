@@ -7,7 +7,7 @@ import (
 	"fmt"
 
 	gcicfg "github.com/daixiang0/gci/pkg/config"
-	"github.com/golangci/golangci-lint/pkg/config"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/config"
 
 	"golang.org/x/tools/go/analysis"
 )

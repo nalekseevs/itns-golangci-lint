@@ -6,6 +6,6 @@ import (
 )
 
 var (
-	StdOut = color.Output // https://github.com/golangci/golangci-lint/issues/14
+	StdOut = color.Output // https://github.com/nalekseevs/itns-golangci-lint/issues/14
 	StdErr = colorable.NewColorableStderr()
 )

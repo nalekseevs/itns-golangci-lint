@@ -8,8 +8,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/golangci/golangci-lint/pkg/exitcodes"
-	"github.com/golangci/golangci-lint/test/testshared"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/exitcodes"
+	"github.com/nalekseevs/itns-golangci-lint/test/testshared"
 )
 
 //nolint:misspell // misspelling is intentional
