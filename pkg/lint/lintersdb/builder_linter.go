@@ -78,6 +78,7 @@ import (
 	"github.com/nalekseevs/itns-golangci-lint/pkg/golinters/nolintlint"
 	"github.com/nalekseevs/itns-golangci-lint/pkg/golinters/nonamedreturns"
 	"github.com/nalekseevs/itns-golangci-lint/pkg/golinters/nosprintfhostport"
+	"github.com/nalekseevs/itns-golangci-lint/pkg/golinters/o11yspanname"
 	"github.com/nalekseevs/itns-golangci-lint/pkg/golinters/paralleltest"
 	"github.com/nalekseevs/itns-golangci-lint/pkg/golinters/perfsprint"
 	"github.com/nalekseevs/itns-golangci-lint/pkg/golinters/prealloc"
@@ -774,7 +775,6 @@ func (LinterBuilder) Build(cfg *config.Config) ([]*linter.Config, error) {
 			WithURL("https://github.com/mvdan/unparam"),
 
 		linter.NewConfig(unused.New(&cfg.LintersSettings.Unused, &cfg.LintersSettings.Staticcheck)).
-			WithEnabledByDefault().
 			WithSince("v1.20.0").
 			WithLoadForGoAnalysis().
 			WithPresets(linter.PresetUnused).
@@ -825,6 +825,13 @@ func (LinterBuilder) Build(cfg *config.Config) ([]*linter.Config, error) {
 			WithURL("https://github.com/bombsimon/wsl"),
 
 		linter.NewConfig(zerologlint.New()).
+			WithSince("v1.53.0").
+			WithPresets(linter.PresetBugs).
+			WithLoadForGoAnalysis().
+			WithURL("https://github.com/ykadowak/zerologlint"),
+
+		linter.NewConfig(o11yspanname.New()).
+			WithEnabledByDefault().
 			WithSince("v1.53.0").
 			WithPresets(linter.PresetBugs).
 			WithLoadForGoAnalysis().
