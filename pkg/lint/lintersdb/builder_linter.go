@@ -681,6 +681,7 @@ func (LinterBuilder) Build(cfg *config.Config) ([]*linter.Config, error) {
 			DeprecatedError("The repository of the linter has been deprecated by the owner.", "v1.39.0", "exportloopref"),
 
 		linter.NewConfig(sqlclosecheck.New()).
+			WithEnabledByDefault().
 			WithSince("v1.28.0").
 			WithPresets(linter.PresetBugs, linter.PresetSQL).
 			WithLoadForGoAnalysis().
