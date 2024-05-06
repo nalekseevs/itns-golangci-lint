@@ -151,6 +151,7 @@ func (LinterBuilder) Build(cfg *config.Config) ([]*linter.Config, error) {
 			WithURL("https://github.com/breml/bidichk"),
 
 		linter.NewConfig(bodyclose.New()).
+			WithEnabledByDefault().
 			WithSince("v1.18.0").
 			WithLoadForGoAnalysis().
 			WithPresets(linter.PresetPerformance, linter.PresetBugs).
